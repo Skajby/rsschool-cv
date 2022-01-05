@@ -75,3 +75,13 @@
     letter-spacing: 5px;
     color: #a82200;
   }
+  .link {
+    text-decoration: none;
+    color: rgb(197, 197, 0);
+    transition: color 0.4s;
+  }
+  
+  .link:hover {
+    color: #06f029;
+  }
+ 
