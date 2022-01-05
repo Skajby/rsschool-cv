@@ -1,23 +1,27 @@
-.body
-{
-    font-family: 'Roboto', sans-serif;
-}
+
 * {
     box-sizing: border-box;
   }
-.header
-{ 
-    border: 1px solid red;
-}
-.main
-{
-    border: 1px solid rgb(14, 18, 235)
-}
-.body {
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight: 450;
+    line-height: 1.5;
+    color: #330000;
+     }
+header,
+main,
+footer {
+    border: 1px solid #330000;
+}
+main
+{
+    background-color: #c2bfbf;
+}
   .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -31,14 +35,21 @@
     scroll-behavior: smooth; 
   }
   .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
     list-style: none;
+    background-color: #b65800d8;
   }
   .nav-link {
     padding: 0 20px;
     line-height: 50px;
-  }
-  .nav-link {
+    text-decoration: none;
     transition: .3s;
+  }
+  .nav-link:hover {
+    color:#ff0d05;
   }
   .section-item a {
     color: #f00808;
@@ -61,13 +72,7 @@
       width: 100%;
     }
   }
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size:20px;
-    font-weight: 450;
-    line-height: 1.5;
-    color: #330000;
-  }
+
   .section-title {
     font-size: 22px;
     font-weight: 450;
@@ -84,4 +89,60 @@
   .link:hover {
     color: #06f029;
   }
- 
+ .myphoto
+ {  width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;
+     margin: 30px;
+  }
+
+
+     
+.header-info {
+    display: flex; 
+}
+.header-name {
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 8px;
+
+     }
+  .rss
+{
+    width: 131px;
+    height: 50px;
+}
+.icon-git
+ {
+    width: 50px;
+    height: 50px;
+ }
+.footer {
+    padding: 20px;
+    background: #b65800d8;
+    font-weight: bold;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+ .header-info {
+    display: flex; 
+}
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+}
+.container-main {
+    display: flex;
+    justify-content: space-around ;
+   
+}
