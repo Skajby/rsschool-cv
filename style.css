@@ -1,7 +1,4 @@
-.body
-{
-    font-family: 'Roboto', sans-serif;
-}
+
 * {
     box-sizing: border-box;
   }
@@ -17,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
   }
   .container {
     max-width: 1440px;
@@ -61,7 +59,7 @@
       width: 100%;
     }
   }
-  body {
+  .body {
     font-family: 'Roboto', sans-serif;
     font-size:20px;
     font-weight: 450;
@@ -84,4 +82,18 @@
   .link:hover {
     color: #06f029;
   }
- 
+ .myphoto
+ {
+     width: 40%;
+     
+ }
+ .rss
+{
+    width: 131px;
+    height: 50px;
+}
+.icon-git
+ {
+    width: 50px;
+    height: 50px;
+ }
